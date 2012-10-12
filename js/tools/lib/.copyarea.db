@@ -1,0 +1,7 @@
+ClearCase CopyAreaDB|4
+inter_reference\POC\swat\SWAT_Web\js\tools\lib
+2
+3
+10:jetty-6.1.19.jar|1|13778f043d8|809a2|dbf8d7b8|7a21b2c5e7f940a2b642459381ecf9cd|0
+1c:servlet-api-2.5-20081211.jar|1|13778f047c0|20bf5|65ff463|047695c0b7884bf2b707b2611b248745|0
+15:jetty-util-6.1.19.jar|1|13778f045eb|2a629|a88ce82e|1f24bf8482e34a02bf7fdf60e276f754|0

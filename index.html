@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!--<meta name="viewport" content="user-scalable=no, width=device-width" />-->
+
+<!--<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width" />-->
+
+<!--<link rel="apple-touch-startup-image" href="images/startup_portrait.png" />-->
+<link rel="apple-touch-icon"href="images/apple-touch-icon.png" />
+
+<!-- 320x460 for iPhone 3GS -->
+<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/startup-iphone.png" />
+
+<!-- 640x920 for retina display -->
+<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/startup-iphone4.png" />
+
+<!-- iPad Portrait 768x1004 -->
+<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/startup_portrait.png" />
+
+<!-- iPad Landscape 1024x748 -->
+<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/startup_landscape.png" />
+
+<link rel="apple-touch-startup-image" href="images/startup_landscape_retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />
+
+<link rel="apple-touch-startup-image" href="images/startup_portrait_retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" />
+
+<title>SWAT</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--<script src="js/svg.js" data-debug="true"></script>-->
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="js/navi.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div style="position: absolute; width:300px; left: 9px; top: 33px;" id="console"></div>
+  <div id="header">
+        <span class="red">SSgAI Workforce</span> Allocation Tool        
+   	<div class="asofdate"></div>	
+  </div>
+  <div id="content_wrapper">
+      <div class="content first" id="resource">
+        <div class="section_left">
+            <div id="content_head">
+              <div class="panel_head">resource</div>
+                <div class="resource_list_head">
+                    <div class="resource_list_filter" id="diagram">                
+                    </div>
+                    <div class="resource_list_column_name">Name</div>
+                    <div class="resource_list_column_2">Manager</div>
+                </div>
+            </div>
+            <div id="nameTableWrapper">
+                <div id="nameTable" class="nameTable">
+                    <div class="name"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section_right">
+            <div class="slideBtnWrapper_L"></div>   
+            <div id="gantt" class="canvas">
+                <div id="calendarWrapper">
+                    <div id="calendar" class="calendar">					
+                        
+                    </div>
+                </div>
+                <div id="utilsWrapper" class="scrollview-container">
+                    <div class="utils" id="utils">
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="slideBtnWrapper"><a href="#" class="slideBtn open"></a></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="content" id="project">
+        <div class="section_left">
+            <div id="content_head">
+              <div class="panel_head">Project</div>
+                <div class="resource_list_head">
+                    <div class="resource_list_filter" id="diagram">                
+                    </div>
+                    <div class="resource_list_column_name">Name</div>
+                    <div class="resource_list_column_2">Manager</div>
+                </div>
+            </div>
+            <div id="nameTableWrapper">
+                <div id="nameTable" class="nameTable">
+                    <div class="name"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section_right">
+            <div class="slideBtnWrapper_L"></div>   
+            <div id="gantt" class="canvas">
+                <div id="calendarWrapper">
+                    <div id="calendar" class="calendar">                        
+                  </div>
+                </div>
+                <div id="utilsWrapper" class="scrollview-container">
+                    <div class="utils">
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="slideBtnWrapper"><a href="#" class="slideBtn open"></a></div>
+        </div>
+      </div>
+      <div class="content" id="summary">
+        <div class="section_left">
+            <div id="content_head">
+              <div class="panel_head">Summary</div>
+                <div class="resource_list_head">
+                    <div class="resource_list_filter" id="diagram">                
+                    </div>
+                </div>
+            </div>            
+            <table style="display: none;">
+                <tbody>
+                    <tr>
+                        <th>20.06%</th>
+                        <td>Financials</td>
+                    </tr>
+                    <tr>
+                        <th>12.10%</th>
+                        <td>Industrials</td>
+                    </tr>
+                    <tr>
+                        <th>11.89%</th>
+                        <td>Information Technology</td>
+                    </tr>
+                    <tr>
+                        <th>11.44%</th>
+                        <td>Energy</td>
+                    </tr>
+                    <tr>
+                        <th>10.75%</th>
+                        <td>Consumer Discretionary</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>8.85%</th>
+                        <td>Consumer Staples</td>
+                    </tr>
+                    <tr>
+                        <th>8.75%</th>
+                        <td>Health Care</td>
+                    </tr>
+                    <tr>
+                        <th>7.51%</th>
+                        <td>Materials</td>
+                    </tr>
+                    <tr>
+                        <th>4.26%</th>
+                        <td>Telecommunication Services</td>
+                    </tr>
+                    <tr>
+                        <th>3.60%</th>
+                        <td>Utilities</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="pie"></div>  
+        </div>
+        <div class="section_right">
+            <div class="slideBtnWrapper_L"></div>   
+            <div id="gantt" class="canvas">
+                <div id="calendarWrapper">
+                    <div id="calendar" class="calendar">					
+                        
+                    </div>
+                </div>
+                <div id="utilsWrapper" class="scrollview-container">
+                    <div class="utils">
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="slideBtnWrapper"><!--<a href="#" class="slideBtn open"></a>--></div>
+        </div>
+      </div>
+  	<div class="clear"></div>
+  </div>
+  <div id="footer">
+    	<div class="legend">
+        	<div class="holiday"></div>
+            <div>China Holiday</div>
+        	<div class="usholiday"></div>
+            <div>US Holiday</div>            
+        	<div class="leave"></div>
+            <div>Leave</div>
+            <div class="free_legend"></div>
+            <div>Free (Utility < 50)</div>
+            <div class="busy_legend"></div>
+            <div>Busy (Utility ≥ 50)</div>
+        </div>
+        <div class="navi">
+        	<a href="#resource" class="current">Resource Panel</a>
+            <a href="#project">Project Panel</a>
+            <a href="#" >Summary Panel</a>
+        </div>
+  </div>
+</div>
+</body>
+</html>

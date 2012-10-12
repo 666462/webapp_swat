@@ -1,0 +1,59 @@
+rect {
+	stroke-width: 0;
+}
+rect.busy {
+	fill: #f23890;
+}
+rect.free {
+	fill: #30c1e3;
+}
+rect.weekday {
+	fill: #d2dee5;
+}
+rect.weekend {
+	fill: #c3d3df;
+}
+rect.holiday {
+	fill: #b6c7d1;
+}
+rect.header_weekday {
+	fill: #c03904;
+}
+rect.header_weekend {
+	fill: #729abd;
+}
+rect.header_holiday {
+	fill: #5C747E;
+}
+rect.header_usholiday {
+	fill: url(#header_usholiday);
+}
+rect.usholiday {
+	fill: url(#usholiday);
+}
+line {
+	stroke-width: 1;
+}
+line.white {
+	stroke: white;
+}
+line.black {
+	stroke: #0B1016;
+}
+line.usholiday {
+	stroke-dasharray: 11, 11; 
+	stroke: #c3d3df; 
+	stroke-width: 11;
+}
+line.header_usholiday {
+	stroke-dasharray: 11, 11; 
+	stroke: #c56a47; 
+	stroke-width: 11;
+}
+text {
+	font-size: 12px;
+	font-family: Arial;
+	alignment-baseline: center; 
+	text-anchor: middle;
+	fill: #ffffff;
+}

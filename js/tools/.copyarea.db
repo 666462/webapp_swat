@@ -1,0 +1,7 @@
+ClearCase CopyAreaDB|4
+inter_reference\POC\swat\SWAT_Web\js\tools
+2
+3
+b:config.html|1|13778f03cc3|11f5|ac28f603|c41f951a02d04a2b973d2bd4f665c101|0
+d:webserver.jar|1|13778f03d31|6ad|3696c16c|59cc184d13a0497dae45b6bd287ccc39|0
+3:lib|2|0|0|0|7a5ce6df1b5c4bd8ac356f8f2f7043ec|0
